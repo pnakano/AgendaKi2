@@ -1,0 +1,44 @@
+<head>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="css/login.css" type="text/css" rel="stylesheet" media="screen,projection">
+
+</head>
+<body>
+    <ion-view title="Login">
+        <ion-nav-buttons side="left">
+            <button menu-toggle="left"class="button button-icon icon ion-navicon"></button>
+        </ion-nav-buttons>
+        <ion-content scroll="false">
+            <ion-content id="backnovo" scroll="false">
+                <img id="logo" src="../img/logovelde.png">
+                <img id="biglogo" src="../img/logogrande-verde.png">
+
+                <div class="center">
+                    <h2 id="textos">Faça seu login e Agendaki!</h2>
+                </div>
+
+                <form id="labels" class="form-signin" name="signinForm" role="form" >
+                    <div class="list list-inset">
+                        <div ng-class="{ 'has-error' : signinForm.email.$invalid }">
+                            <label class="item item-input">
+                                <i class="material-icons">email</i>
+                                <input id="inputs" type="email" name="email" class="form-control" ng-model="user.email" placeholder="Informe seu e-mail!">    
+                            </label>
+                            <p id="mensagens" class="help-block" ng-show="signinForm.email.$invalid">Não sou um e-mail válido ): Preencha-me novamente por favor!</p>
+                        </div>
+
+                        <div ng-class="{ 'has-error' : signinForm.password.$invalid }">
+                            <label class="item item-input">
+                                <i class="material-icons">vpn_key</i>
+                                <input id="inputs" ng-model="user.password" type="password" name="password" class="form-control" ng-minlength="8" placeholder="Informe sua senha!">
+                            </label>
+                            <p id="mensagens" class="help-block" ng-show="signinForm.password.$error.minlength">Essa senha está muito curta hein u.U Mínimo de 8 caracteres!</p>
+                        </div>
+                    </div>  
+                </form>
+
+                <div class="center">
+                    <button id="entre" ng-click="SignIn($event)" ng-disabled="!user.email || !user.password" class="button">Entrar</button>
+                    <a id="cad" ui-sref="cadastro" class="button">Registre-se</a>
+                </div>
+            </ion-content>

@@ -1,0 +1,101 @@
+<body ng-controller="clienteCtrl">
+    <ion-view title="Clientes">
+        <ion-nav-buttons side="left">
+            <button menu-toggle="left"class="button button-icon icon ion-navicon"></button>
+        </ion-nav-buttons>
+
+        <ion-content scroll="true">
+
+
+            <form class="form-signin" name="signinForm" role="form" >
+                <div class="list list-inset">
+                    <div>
+                        <label class="item item-input">
+                            <input type="text" name="nome" class="form-control" placeholder="Informe seu nome completo">    
+                        </label>
+                    </div>
+
+                    <div>
+                        <label class="item item-input">
+                            <input type="text" name="cpf" class="form-control" ng-minlength="11" placeholder="Informe seu CPF">
+                        </label>
+                    </div>
+
+                    <div>
+                        <label class="item item-input">
+                            <input type="text" name="telefone" class="form-control" ng-minlength="9" placeholder="Informe seu telefone">
+                        </label>
+                    </div>
+
+                    <div>
+                        <label class="item item-input">
+                            <input type="email" name="email" class="form-control" placeholder="Informe seu e-mail">
+                        </label>
+                    </div>
+
+                    <div>
+                        <label class="item item-input">
+                            <div>
+                                <input type="text" name="endereco" class="form-control" placeholder="Informe seu endereço">
+                            </div>
+                        </label>
+                        <label class="item item-input">
+                            <div>
+                                <input type="text" name="bairro" class="form-control" placeholder="Informe seu bairro">
+                            </div>
+                        </label>
+                    </div>
+
+                    <div class="list">
+                        <label class="item item-input item-select">
+                            <div class="input-label">
+                                Estado
+                                <select>
+                                    <option>PR</option>
+                                    <option selected>SC</option>
+                                    <option>BH</option>
+                                </select>
+                            </div>
+                        </label>
+                    </div>
+
+                    <div class="list">
+                        <label class="item item-input item-select">
+                            <div class="input-label">
+                                Cidade
+                                <select>
+                                    <option>Pato Branco</option>
+                                    <option selected>Chapecó</option>
+                                    <option>Feira de Santana</option>
+                                </select>
+                            </div>
+                        </label>
+                    </div>
+
+
+                </div>  
+            </form>
+
+            <div class="center">
+                <a  class="button">Cadastrar</a>
+            </div>
+
+            <div class="list list-inset">
+                <label class="item item-input">
+                    <i class="icon ion-search placeholder-icon"></i>
+                    <input type="text" placeholder="Search">
+                </label>
+                
+                <ion-list>
+                    <ion-item >
+                        Fulano
+                    </ion-item>
+                     <ion-item >
+                        Ciclano
+                    </ion-item>
+                </ion-list>
+
+            </div>
+
+
+        </ion-content>

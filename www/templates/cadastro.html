@@ -1,0 +1,62 @@
+    <head>
+
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link href="css/cadastro.css" type="text/css" rel="stylesheet" media="screen,projection">      
+
+    </head>
+
+    <body ng-controller="cadastroCtrl">
+        
+        <ion-view title="Login">
+        <ion-nav-buttons side="left">
+            <button menu-toggle="left"class="button button-icon icon ion-navicon"></button>
+        </ion-nav-buttons>
+            
+        <ion-content id="backnovo" scroll="false">
+            <img id="logo" src="../img/logoroxo.png">
+            <img id="biglogo" src="../img/logogrande-roxo.png">
+
+            <div class="center">
+                <h2 id="textos">Faça seu cadastro e facilite seu dia-a-dia!</h2>
+            </div>
+
+            <form id="labels" class="form-signin" name="regForm" role="form" >
+                <div class="list list-inset">
+                    <div ng-class="{ 'has-error' : regForm.email.$invalid }">
+                        <label class="item item-input">
+                            <i class="material-icons">email</i>
+                            <input id="inputs" type="email" name="email" class="form-control" ng-model="user.email" placeholder="Informe seu e-mail!">    
+                        </label>
+                        <p id="mensagens" class="help-block" ng-show="regForm.email.$invalid">Não sou um e-mail válido ): Preencha-me novamente por favor!</p>
+                    </div>
+
+                    <div ng-class="{ 'has-error' : regForm.password.$invalid }">
+                        <label class="item item-input">
+                            <i class="material-icons">vpn_key</i>
+                            <input id="inputs" ng-model="user.password" type="password" name="password" class="form-control" ng-minlength="8" placeholder="Informe sua senha!">
+                        </label>
+                        <p id="mensagens" class="help-block" ng-show="regForm.password.$error.minlength">Essa senha está muito curta hein u.U Mínimo de 8 caracteres!</p>
+                        
+                        <p style="color:red;" ng-show="regError">{{regErrorMessage}}</p>
+                    </div>
+                    
+                     <div ng-class="{ 'has-error' : regForm.password.$invalid }">
+                        <label class="item item-input">
+                            <i class="material-icons">vpn_key</i>
+                            <input id="inputs" ng-model="user.password" type="password" name="password" class="form-control" ng-minlength="8" placeholder="Repita sua senha!">
+                        </label>
+                        <p id="mensagens" class="help-block" ng-show="regForm.password.$error.minlength">Essa senha está muito curta hein u.U Mínimo de 8 caracteres!</p>
+                        
+                        <p style="color:red;" ng-show="regError">{{regErrorMessage}}</p>
+                    </div>
+                </div>  
+            </form>
+                        
+
+            <div class="center">
+                <button id="cad" ng-click="signUp();" ng-disabled="!user.email || !user.password" class="button">Cadastre-me!</button>
+            </div>
+
+        </ion-content>
+        </ion-view>
+    </body>

@@ -1,0 +1,224 @@
+body, html {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/*Parte Roxa*/
+#biglogo{
+    margin-left: 1%;
+    margin-top: 1%;
+    width: 13%;
+}
+#entreroxo{
+    margin-left: 90%;
+    margin-right: 5%;
+    margin-top: 1.5%;
+    font-family: sans-serif;
+    color: #66a19b;
+    font-size: 17px;
+}
+#entreroxo:hover{
+    box-shadow: 2px 2px 6px 1px rgba(0,0,0,0.40);
+}
+#sobreroxo{
+    margin-left: 90%;
+    margin-right: 5%;
+    margin-top: 1.5%;
+    font-family: sans-serif;
+    color: #66a19b;
+    font-size: 17px;
+}
+#sobreroxo:hover{
+    box-shadow: 2px 2px 6px 1px rgba(0,0,0,0.40);
+}
+#iroxo{
+    color: #66a19b;
+}
+#cadroxo{
+    background-color: #66a19b;
+    color: white;
+    font-size: 17px;
+    margin-top: 1.5%;
+    margin-bottom: 1.5%;
+}
+#cadroxo:hover{
+    box-shadow: 2px 2px 6px 1px rgba(0,0,0,0.40);
+}
+/*Parte Roxa*/
+
+/*Parte Verde*/
+#entreverde{
+    margin-left: 90%;
+    margin-right: 5%;
+    margin-top: 1.5%;
+    font-family: sans-serif;
+    color: #68567a;
+    font-size: 17px;
+}
+#entreverde:hover{
+    box-shadow: 2px 2px 6px 1px rgba(0,0,0,0.40);
+}
+#sobreverde{
+    margin-left: 90%;
+    margin-right: 5%;
+    margin-top: 1.5%;
+    font-family: sans-serif;
+    color: #68567a;
+    font-size: 17px;
+}
+#sobreverde:hover{
+    box-shadow: 2px 2px 6px 1px rgba(0,0,0,0.40);
+}
+#iverde{
+    color: #68567a;
+}
+#cadverde{
+    background-color: #68567a;
+    color: white;
+    font-size: 17px;
+    margin-top: 1.5%;
+    margin-bottom: 1.5%;
+}
+#cadverde:hover{
+    box-shadow: 2px 2px 6px 1px rgba(0,0,0,0.40);
+}
+/*Parte Verde*/
+
+.center{
+    text-align: center;
+}
+#textos{
+    padding-top: 4%;
+    color: white;
+    font-weight: 600;
+}
+
+#cardicones{
+    padding-top: 2%;
+    padding-bottom: 2%;
+    padding-left: 10%;
+    padding-right: 10%;
+    height: 85%;
+}
+.card{
+    margin-left: 7%;
+    margin-right: 7%;
+}
+#colunas{
+    text-align: center;
+    padding-left: 10%;
+    padding-right: 10%;
+    font-family: sans-serif;
+}
+#colunas2{
+    text-align: center;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 5%;
+    font-family: sans-serif;
+}
+#backnovo{
+    background: url(../img/bkg.jpg);
+    height: 100%;
+}
+#backnovo2{
+    background: url(../img/bkg3.jpg);
+    height: 100%;
+}
+#slide{
+    min-height: 100% !importat;
+}
+#mentreroxo{
+    display: none;
+}
+
+
+@media ( min-width: 40.5em ){
+    #cardmobile{
+        visibility: hidden;
+        max-width: 0px;
+        max-height: 0px;
+    }
+}
+
+/* Dispositivos moveis - Mobile first */
+@media ( max-width: 40.5em ){
+    #cardicones{
+        visibility: hidden;
+        width: 0px;
+        height: 0px;
+        display: none;
+    }
+    #colunas{
+        visibility: hidden;
+        width: 0px;
+        height: 0px;
+    }
+    #col{
+        visibility: hidden;
+        width: 0px;
+        height: 0px;
+        display: none;
+    }
+    #entreroxo{
+        margin-left: 77%;
+        margin-right: 5%;
+        margin-top: 1.5%;
+        font-family: sans-serif;
+        color: #66a19b;
+        box-shadow: 2px 2px 6px 1px rgba(0,0,0,0.40);
+    }
+    #entreverde{
+        margin-left: 77%;
+        margin-right: 5%;
+        margin-top: 1.5%;
+        font-family: sans-serif;
+        color: #68567a;
+        box-shadow: 2px 2px 6px 1px rgba(0,0,0,0.40);
+    }
+    #sobreroxo{
+        margin-left: 75%;
+        margin-right: 5%;
+        font-family: sans-serif;
+        color: #66a19b;
+        box-shadow: 2px 2px 6px 1px rgba(0,0,0,0.40);
+    }
+    #sobreverde{
+        margin-left: 75%;
+        margin-right: 5%;
+        font-family: sans-serif;
+        color: #68567a;
+        box-shadow: 2px 2px 6px 1px rgba(0,0,0,0.40);
+    }
+    #textos{
+        padding-top: 4%;
+        color: white;
+        font-weight: 600;
+        font-size: 27px;
+    }
+    #cadroxo{
+        background-color: #66a19b;
+        color: white;
+        font-size: 17px;
+        margin-top: 1.5%;
+        margin-bottom: 1.5%;
+        box-shadow: 2px 2px 6px 1px rgba(0,0,0,0.40);
+    }
+    #cadverde{
+        background-color: #68567a;
+        color: white;
+        font-size: 17px;
+        margin-top: 1.5%;
+        margin-bottom: 1.5%;
+        box-shadow: 2px 2px 6px 1px rgba(0,0,0,0.40);
+    }
+    #logob{
+        display: none;
+    }
+    #mentreroxo{
+    display: block;
+}
+}
+
+/* Dispositivos moveis - Mobile first */
